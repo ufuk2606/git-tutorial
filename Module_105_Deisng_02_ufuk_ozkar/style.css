@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: inherit;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+
+.header{
+	
+	display: flex;
+	background: #2851A3;
+}
+.header .container{
+	height: 82px;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+
+}
+
+.header .container .logo{
+	color: #ffffff;
+	font-size: 50px;
+	margin:50px 0px 0px 150px;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .container .kullaniciAdi {
+	height: 23px;
+	width: 150px;
+	display: flex;
+	margin-left: auto;
+}
+.header .container .kullaniciAdi ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .container .kullaniciAdi ul li {
+	color: #fff;
+	margin: 0px 10px 50px 0px;
+}
+.header .container .kullaniciAdi ul li {
+	color: #fff;
+}
+.header .container .kullaniciAdi ul li .buton{
+	display: block;
+	width: 52px;
+	height: 18px;
+	font-size: 12px;
+	color: #fff;
+	background: #4267b2;
+}
+
+
+/**************  
+ANA KISIM
+***************/
+.anakisim{
+	background: linear-gradient(white, #D3D8E8);
+	display: flex;
+}
+.anakisim .container {
+	display: flex;
+}
+.anakisim .container .ana .soldakiyazi{
+	width: 450px;
+	height: 20px;
+	display: block;
+	color: #0e385f;
+	font-size: 20px;
+	margin: 40px 0px 0px 150px;
+}
+.anakisim .container .ana img{
+	width: 50%;
+	height: 50%;
+	margin: 50px 0px 0px 150px;
+}
+.anakisim .container .ana{
+	display: block;
+}
+
+.anakisim .container div .hesap{
+	font-size: 41px;
+	display: block;
+	margin: 20px 0px;
+}
+.anakisim .container div .hizli{
+	font-size: 25px;
+	display: block;
+	margin: 20px 0px;
+}
+.anakisim .container .ana div .ad{
+	font-size: 18px;
+	border: 1px solid;
+	border-color: #bdc7d8;
+	padding: 8px 10px;
+	width: 172px;
+	border-radius: 5px;
+	margin: 5px 5px 5px;
+}
+.anakisim .container .ana div .soyad{
+	font-size: 18px;
+	border: 1px solid;
+	border-color: #bdc7d8;
+	padding: 8px 10px;
+	width: 172px;
+	border-radius: 5px;
+	margin: 5px 5px 5px;
+}
+.anakisim .container .ana div .cep{
+	font-size: 18px;
+	border: 1px solid;
+	border-color: #bdc7d8;
+	padding: 8px 10px;
+	width: 380px;
+	border-radius: 5px;
+	margin: 5px 5px 5px;
+	display: block;
+}
+.anakisim .container .ana div .yenisifre{
+	font-size: 18px;
+	border: 1px solid;
+	border-color: #bdc7d8;
+	padding: 8px 10px;
+	width: 172px;
+	border-radius: 5px;
+	margin: 5px 5px 5px;
+}
+.anakisim .container .ana .dogum{
+	font-size: 16px;
+	display: block;
+	color: #90949C;
+	margin: 10px 0px 5px;
+}
+.anakisim .container .ana div .gun{
+	padding: 5px;
+	margin: 5px 2px 5px;
+	border: 1px solid;
+	border-color: #bdc7d8;
+	border-radius: 5px;
+}
+.anakisim .container .ana div .ay{
+	padding: 5px;
+	margin: 5px 2px 5px;
+	border: 1px solid;
+	border-color: #bdc7d8;
+	border-radius: 5px;
+}
+.anakisim .container .ana div .yil{
+	padding: 5px;
+	margin: 5px 2px 5px;
+	border: 1px solid;
+	border-color: #bdc7d8;
+	border-radius: 5px;
+}
+.anakisim .container .ana div .cinsiyet{
+	font-size: 16px;
+	color: #90949C;
+	margin: 10px 0px 5px;
+}
+.anakisim .container .ana div .kadin{
+	background-color: #fff;
+	margin: 3px 3px 0px 5px;
+}
+.anakisim .container .ana div .erkek{
+	background-color: #fff;
+	margin: 3px 3px 0px 5px;
+}
+.anakisim .container .ana div .ozel{
+	background-color: #fff;
+	margin: 3px 3px 0px 5px;
+}
+.anakisim .container .ana div .labelkadin{
+	font-size: 16px;
+	margin: 10px 0px 5px;
+}
+.anakisim .container .ana div .labelerkek{
+	font-size: 16px;
+	margin: 10px 0px 5px;
+}
+.anakisim .container .ana div .labelozel{
+	font-size: 16px;
+	margin: 10px 0px 5px;
+}
+.anakisim .container .ana .aciklama{
+	width: 350px;
+	height: 90px;
+	display: block;
+	font-size: 11px;
+	color:#777777;
+	margin: 10px 0px 0px 0px;
+}
+.anakisim .container .ana .kaydol{
+	border: #0e385f solid 1px;
+	border-radius: 5px;
+	background: #69A74E;
+	color: #fff;
+	width: 194px;
+	height: 40px;
+	margin: 0px 0px 10px 20px;
+}
+
+
+/**************  
+FOOTER
+***************/
+
+.footer .container{
+	display: block;
+	margin-left: 100px;
+}
+.footer .container ul{
+	display: flex;
+}
+.footer .container ul li{
+	margin: 20px 20px;
+}

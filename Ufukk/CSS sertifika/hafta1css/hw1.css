@@ -1,0 +1,52 @@
+body{
+    display: block;
+    margin: 8px;
+    color: #202124;
+    font-size: normal;
+}
+nav{
+    max-width: 80%;
+    font-weight: bold;
+    margin: 2%;
+}
+
+
+main{
+    display: block;
+}
+
+h1{
+    text-align: center;
+    color:#FF0000;
+    font-family: fantasy;
+}
+header{
+    background:#dbccd8;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+section{
+    background: grey;
+}
+h2{
+    color:#003399;
+    font-weight: bold;
+    margin: 3%;
+}
+img{
+    display: none;
+    max-height: auto;
+    max-width: 33%;
+    margin-left: auto;
+}
+thead{
+    text-align: center;
+    font-weight: bold;
+}
+a:link{
+    color: #8A2BE2;
+    text-decoration: none;
+}
+a:visited{
+    color: #00ff00;
+}

@@ -1,4 +1,4 @@
-
+ 
 
 function daireAlan(r) {
     let sayi = Math. round(Math.PI)  * Math.pow(r, 2);

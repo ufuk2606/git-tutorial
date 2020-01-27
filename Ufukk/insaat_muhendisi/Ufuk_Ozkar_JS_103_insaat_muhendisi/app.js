@@ -22,5 +22,5 @@ console.log(kupH);
 
 let kupA = kupAlan (3);
 console.log(kupA);
-
+ 
 

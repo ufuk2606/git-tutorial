@@ -1,3 +1,2 @@
-let kelime = '       Ufuk Ozkar bu odevi titizlikle yapıyor.       ';
-
-console.log(kelime.trimStart());
+let sayi = Math.hypot(5,12);
+console.log(sayi);

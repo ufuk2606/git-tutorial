@@ -1,6 +1,7 @@
 
-let month = 5; // mart ayi
-let day = 3; //ayin 12. günp
+let month = 3; // mart ayi
+let day = 28; //ayin 12. günp
+
 
 
 if ( (month ==12 && day >=22 && day <=31 ) || (month==1 && day<=21 && day>0) ) {

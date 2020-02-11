@@ -2,18 +2,15 @@
 
 function gercekArabalar(araba) {
     
-    if (araba.includes(';)')) {
-        return false;
-    }
-    return true;
+    let bul = araba.filter(x => !x.includes(";)"))
+    return bul;
 };
+
 
 function oHarfiOlanArabalar(araba) {
     
-    if (araba.includes('o')) {
-        return true;
-    }
-    return false;
+    let bul = araba.filter(x => x.includes("o"))
+    return bul;
 };
 
 
@@ -40,51 +37,42 @@ function ikiDefaOHarfiGecenArabalar(araba) {
 
 
 function isimUzunlugu(araba) {
-    if (araba.length < 5) {
-        return true;
-    }
-    return false;
+    let bul = araba.filter(x => x.length < 5)
+    return bul;
     
 };
 
+
 function harfDegistirme(araba) {
-    if (araba.startsWith("f") ) {
-
-        return true;
-
-    }
-    return false;
+    let fIleBaslayan = araba.filter(x => x.startsWith("f"));
+    let bulDegis = fIleBaslayan.map(x => x.slice(0,-1).concat("x"));
+    return bulDegis;
 };
 
 
 function ucIleAltiArasindaOlanlar(araba) {
-    let dizi = ("my favorite");
-    if ((araba.length > 3) && (araba.length < 6)) {
-        if (araba.includes("a")) {
-            let yeni =  dizi.concat("",araba);
-            return yeni;
-        }
-        
-    }
-    return false;
+    let arabaBul = araba.filter(x => x.length < 6 && x.length > 3);
+    let icindeAOlanlar = arabaBul.filter(x => x.includes("a") );
+    let herbirisine = icindeAOlanlar.map(x => " my favorite "+ x );
+    return   herbirisine ;
+    
 };
 
 
 function oVeAOlanlar(araba) {
-    
-    if ((araba.includes("o")) && (araba.includes("a"))) {
-        return true;
-        
-    }
-    return false;
+    let bul = araba.filter(x => x.includes("o") && x.includes("a") );
+    let deneme = bul.map(x => x.length );
+    let asd = deneme.reduce((a,b)=> a+b  );
+    return bul +"<br> karakter sayilari toplami "+ asd;
 };
 
 
 function oVeIOlanlar(araba) {
+    let oVeyaIleriBul = araba.filter(x => x.includes("o") || x.includes("i") );
+    let karakterSayilari = oVeyaIleriBul.map(x => x.length);
+    let asd = karakterSayilari.reduce((a,b)=> a+b  );
+    return oVeyaIleriBul +"<br>karakter sayilari toplami " +  asd;
     
-    if ((araba.includes("o")) && (araba.includes("i"))) {
-        return true;
-        
-    }
-    return false;
 };
+
+

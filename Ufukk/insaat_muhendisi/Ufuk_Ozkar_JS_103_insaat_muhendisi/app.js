@@ -1,26 +1,26 @@
 
 
-let daireA = daireAlan(2);
-console.log("Dairenin Alanı = " , daireA);
+let daireA = InsaatMuhendisi.daireAlan(3);
+output("Dairenin Alanı = " + daireA);
 
 
-let dikdortgenA = dikdortgenAlan(2, 5);
-console.log("Dikdortgenin Alanı = " , dikdortgenA);
+let dikdortgenA =InsaatMuhendisi.dikdortgenAlan(2, 5);
+output("<br>Dikdortgenin Alanı = " + dikdortgenA);
 
 
-let daireC = daireCevre(2);
-console.log("Dairenin Cevresi = " ,daireC);
+let daireC = InsaatMuhendisi.daireCevre(2);
+output("<br>Dairenin Cevresi = " + daireC);
 
 
-let dikdortgenC = dikdortgenCevre (2,3) ;
-console.log("Dikdortgenin Cevresi = " ,dikdortgenC);
+let dikdortgenC = InsaatMuhendisi.dikdortgenCevre (2,3) ;
+output("<br>Dikdortgenin Cevresi = " + dikdortgenC);
 
 
-let kupH = kupHacim(3);
-console.log("Kupun Hacmi = " ,kupH);
+let kupH = InsaatMuhendisi.kupHacim(3);
+output("<br>Kupun Hacmi = " + kupH);
 
 
-let kupA = kupAlan (3);
-console.log("Kupun Alani = " ,kupA);
+let kupA = InsaatMuhendisi.kupAlan (3);
+output("<br>Kupun Alani = "  + kupA);
  
 

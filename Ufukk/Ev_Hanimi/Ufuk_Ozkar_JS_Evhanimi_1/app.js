@@ -4,16 +4,16 @@ let bitmis = [];
 let bitmemis = [];
 
 
-bitmis.push(isaretOlan(islerim));
+bitmis.push(EvHanimi.isaretOlan(islerim));
 
-bitmemis.push(isaretOlmayan(islerim));
+bitmemis.push(EvHanimi.isaretOlmayan(islerim));
 
-console.log("Biten Isler => ", bitmis);
+output("<br>Biten Isler => " + bitmis);
 
-console.log("Kalan Isler => ", bitmemis);
+output("<br>Kalan Isler => " + bitmemis);
 
-if (kontrol(islerim)){
-    console.log("Isler bitti mi => EVET")
+if (EvHanimi.kontrol(islerim)){
+    output("<br>Isler bitti mi => EVET")
 }else {
-    console.log("Isler bitti mi => HAYIR")
+    output("<br>Isler bitti mi => HAYIR")
 }

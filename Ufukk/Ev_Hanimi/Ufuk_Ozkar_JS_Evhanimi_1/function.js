@@ -1,14 +1,19 @@
-function isaretOlan(x) {
+
+class EvHanimi{
+  
+static isaretOlan(x) {
   let islem = x.filter(a => a.startsWith("(x)"));
   return islem;
-}
+};
 
-function isaretOlmayan(x) {
+static isaretOlmayan(x) {
   let islem = x.filter(a => !a.startsWith("(x)"));
   return islem;
-}
+};
 
-function kontrol(x) {
+static kontrol(x) {
   let islem = x.every(a => a.startsWith("(x)"));
   return islem;
+};
+
 }

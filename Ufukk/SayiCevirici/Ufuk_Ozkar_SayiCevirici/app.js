@@ -1,5 +1,8 @@
 
+let x = 5214785369;
 
-let x = 123009;
 
-console.log("sonuc = " , GirilenSayi(x) );
+let sayi1 = new SayiOkuma(x);
+
+
+console.log("Girilen Sayi= ", x ,"Sonuc= ", sayi1.girilenSayi());

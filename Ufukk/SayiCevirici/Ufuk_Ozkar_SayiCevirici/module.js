@@ -50,10 +50,8 @@ class SayiOkuma{
         }
 
         for (let k = 0; k < birler.length; k++) {
-            /*if (this.sayi.length == 3 && this.sayi[0] == 1) {
-                
-            }*/
-            if (this.sayi.length == 3 && this.sayi[this.sayi.length-3] == k && this.sayi[this.sayi.length-3] != 1 ) {
+            // bir yuz gibi problem var
+            if (this.sayi.length == 3 && this.sayi[this.sayi.length-3] == k ) {
                 this.sayi[this.sayi.length-3] = birler[k].concat("", eklenecek[0]);
 
                 if ( this.sayi[this.sayi.length-2] == k) {
@@ -85,11 +83,11 @@ class SayiOkuma{
         }
 
         for (let index = 0; index < birler.length; index++) {
-            //bir if daha gelecek
-            if (this.sayi.length == 4 && this.sayi[this.sayi.length-4] == index && this.sayi[this.sayi.length-4] != 1) {
+            //bir bin gibi problem var
+            if (this.sayi.length == 4 && this.sayi[this.sayi.length-4] == index ) {
                 this.sayi[this.sayi.length-4] = birler[index].concat("", eklenecek[1]);
-                //bir if daha gelecek
-                if (this.sayi[this.sayi.length-3] == index && this.sayi[this.sayi.length-3] != 1 ) {
+                
+                if (this.sayi[this.sayi.length-3] == index ) {
                     this.sayi[this.sayi.length-3] = birler[index].concat("", eklenecek[0]);
                 }
                 else{
@@ -130,7 +128,7 @@ class SayiOkuma{
         }
 
         for (let index = 0; index < birler.length; index++) {
-            if (this.sayi.length == 5 && this.sayi[this.sayi.length-5] == index && this.sayi[this.sayi.length-5] != 1) {
+            if (this.sayi.length == 5 && this.sayi[this.sayi.length-5] == index ) {
                 this.sayi[this.sayi.length-5] = onlar[index];
 
                 if (this.sayi[this.sayi.length-4] == index) {
@@ -143,7 +141,7 @@ class SayiOkuma{
                         }
                     }
                 }
-                if (this.sayi[this.sayi.length-3] == index && this.sayi[this.sayi.length-3] != 1 ) {
+                if (this.sayi[this.sayi.length-3] == index  ) {
                     this.sayi[this.sayi.length-3] = birler[index].concat("", eklenecek[0]);
                 }
                 else{
@@ -183,7 +181,7 @@ class SayiOkuma{
         }
 
         for (let index = 0; index < birler.length; index++) {
-            if (this.sayi.length == 6 && this.sayi[this.sayi.length-6] == index && this.sayi[this.sayi.length-6] != 1) {
+            if (this.sayi.length == 6 && this.sayi[this.sayi.length-6] == index ) {
                 this.sayi[this.sayi.length-6] = birler[index].concat("", eklenecek[0]);
 
                 if (this.sayi[this.sayi.length-5] == index) {
@@ -206,7 +204,7 @@ class SayiOkuma{
                         }
                     }
                 }
-                if (this.sayi[this.sayi.length-3] == index && this.sayi[this.sayi.length-3] != 1 ) {
+                if (this.sayi[this.sayi.length-3] == index  ) {
                     this.sayi[this.sayi.length-3] = birler[index].concat("", eklenecek[0]);
                 }
                 else{
@@ -247,7 +245,7 @@ class SayiOkuma{
         }
 
         for (let index = 0; index < birler.length; index++) {
-            if (this.sayi.length == 7 && this.sayi[this.sayi.length-7] == index && this.sayi[this.sayi.length-7] != 1) {
+            if (this.sayi.length == 7 && this.sayi[this.sayi.length-7] == index ) {
                 this.sayi[this.sayi.length-7] = birler[index].concat("", eklenecek[2]);
 
                 if (this.sayi[this.sayi.length-6] == index) {
@@ -280,7 +278,7 @@ class SayiOkuma{
                         }
                     }
                 }
-                if (this.sayi[this.sayi.length-3] == index && this.sayi[this.sayi.length-3] != 1 ) {
+                if (this.sayi[this.sayi.length-3] == index ) {
                     this.sayi[this.sayi.length-3] = birler[index].concat("", eklenecek[0]);
                 }
                 else{
@@ -321,7 +319,7 @@ class SayiOkuma{
         }
 
         for (let index = 0; index < birler.length; index++) {
-            if (this.sayi.length == 8 && this.sayi[this.sayi.length-8] == index && this.sayi[this.sayi.length-8] != 1) {
+            if (this.sayi.length == 8 && this.sayi[this.sayi.length-8] == index ) {
                 this.sayi[this.sayi.length-8] = onlar[index];
                 
                 if (this.sayi[this.sayi.length-7] == index) {
@@ -365,7 +363,7 @@ class SayiOkuma{
                         }
                     }
                 }
-                if (this.sayi[this.sayi.length-3] == index && this.sayi[this.sayi.length-3] != 1 ) {
+                if (this.sayi[this.sayi.length-3] == index ) {
                     this.sayi[this.sayi.length-3] = birler[index].concat("", eklenecek[0]);
                 }
                 else{
@@ -406,7 +404,7 @@ class SayiOkuma{
         }
 
         for (let index = 0; index < birler.length; index++) {
-            if (this.sayi.length == 9 && this.sayi[this.sayi.length-9] == index && this.sayi[this.sayi.length-9] != 1) {
+            if (this.sayi.length == 9 && this.sayi[this.sayi.length-9] == index ) {
                 this.sayi[this.sayi.length-9] = birler[index].concat("", eklenecek[0]);
 
                 if (this.sayi[this.sayi.length-8] == index) {
@@ -460,7 +458,7 @@ class SayiOkuma{
                         }
                     }
                 }
-                if (this.sayi[this.sayi.length-3] == index && this.sayi[this.sayi.length-3] != 1 ) {
+                if (this.sayi[this.sayi.length-3] == index  ) {
                     this.sayi[this.sayi.length-3] = birler[index].concat("", eklenecek[0]);
                 }
                 else{
@@ -501,7 +499,7 @@ class SayiOkuma{
         }
 
         for (let index = 0; index < birler.length; index++) {
-            if (this.sayi.length == 10 && this.sayi[this.sayi.length-10] == index && this.sayi[this.sayi.length-10] != 1) {
+            if (this.sayi.length == 10 && this.sayi[this.sayi.length-10] == index ) {
                 this.sayi[this.sayi.length-10] = birler[index].concat("", eklenecek[3]);
 
                 if (this.sayi[this.sayi.length-9] == index) {
@@ -565,7 +563,7 @@ class SayiOkuma{
                         }
                     }
                 }
-                if (this.sayi[this.sayi.length-3] == index && this.sayi[this.sayi.length-3] != 1 ) {
+                if (this.sayi[this.sayi.length-3] == index  ) {
                     this.sayi[this.sayi.length-3] = birler[index].concat("", eklenecek[0]);
                 }
                 else{

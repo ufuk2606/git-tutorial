@@ -2,7 +2,7 @@
 const rakamlarYaziyla = ["sifir", "bir", "iki", "uc", "dort", "bes", "alti", "yedi", "sekiz", "dokuz"] ;
 const rakamlarSayiyla = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9] ;
 
-let girilenSayi =  prompt("Lutfen ondan kucuk bir sayiyi yaziyla giriniz :");
+let girilenSayi =  prompt("Lutfen ondan kucuk bir sayiyi yaziyla giriniz :").toLowerCase();
 
 for (let index = 0; index < rakamlarYaziyla.length; index++) {
     if (girilenSayi == rakamlarYaziyla[index]) {

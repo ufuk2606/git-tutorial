@@ -11,22 +11,20 @@
 
 <body>
     <header id='baslik' class="container">
-        <img src="https://lh3.googleusercontent.com/proxy/AQkVj8vJVbH-VS9ciM-ZXfYLEPokGZi2NrIUqoH0E626kq9sBZWVgu8AzwXyv7wsTmhobyoxqygT1CkyXJUSFGBR9Pj1iwWYfE4O8y3y5QjB61Duh1GX6PurRfsD"
+        <img src="http://www.idealordu.com.tr/wp-content/uploads/2018/03/grup_manav.jpg"
             alt="Manav_Tablosu">
     </header>
     <main id="anaBolum" class="container">
         <div id="solBolum">
             <details id="detay">
                 <summary>Meyveler ve Sebzeler</summary>
-                <ul class='liste'>
-                    <li>Muz</li>
-                    <li>Cilek</li>
-                    <li>Elma</li>
-                    <li>Armut</li>
-                    <li>Patates</li>
-                    <li>Ispanak</li>
-                    <li>Portakal</li>
-                    <li>Mantar</li>
+                <ul id='urunler'>
+                    <li><button id="muz" value="muz">muz</button></li>                    
+                    <li><button id="cilek" value="cilek">cilek</button></li>
+                    <li><button id="patates" value="patates">patates</button></li>
+                    <li><button id="armut" value="armut">armut</button></li>
+                    <li><button id="mantar" value="mantar">mantar</button></li>
+                    <li><button id="uzum" value="uzum">uzum</button></li>
                 </ul>
             </details>
         </div>
@@ -35,10 +33,15 @@
                 <h2>Siparislerim</h2>
             </div>
             <div>
-                <p>yandan gelecekler</p>
+                <ul id="siparisler">
+                    <li>siparisler gelecek</li>
+                </ul>
             </div>
         </div>
     </main>
+
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

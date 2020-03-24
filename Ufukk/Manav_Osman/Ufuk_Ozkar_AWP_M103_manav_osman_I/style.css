@@ -79,12 +79,12 @@ body {
     width: 100%;
 }
 
-.liste li {
+#urunler li {
     padding: 10px 20px;
 
 }
 
-.liste li:hover{
+#urunler li:hover{
     background: #500D16;
     color: #fff;
 }

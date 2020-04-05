@@ -8,5 +8,4 @@ class AlmancaTurkceKelimeler{
 const almancaKelimeler = [ "sitzen", "schreiben", "schule", "fenster", "schrank", "öffnen", "ruhig", "telefonieren", "verstehen", "allein" ] ;
 const turkceKelimeler = [ "oturmak", "yazmak", "okul", "pencere", "dolap", "acmak", "sessiz-sakin", "telefon etmek", "anlamak", "yalniz" ] ;
 
-
 let degerlerinGozukmesiIcinOlanListe = [] ;

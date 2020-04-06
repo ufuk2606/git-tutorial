@@ -58,7 +58,8 @@ describe('Array tests', function () {
         });
         it('should create a string with manipulated content', function () {
             var c = ['i', 't', 'c', 'l', 'u', 'b']; // do not touch this
-            c.splice(2,1,"C").toString();
+            c[2] = "C" ;
+            c = c.join("");
             c.should.equal("itClub");
         });
     });
@@ -159,11 +160,8 @@ describe('Array tests', function () {
         });        
         it('should reverse a string', function () {
             var c = "bulcti"; // do not touch this!
-            let a = c.split(", ");
-            a.reverse();
-            a.join();
-            c = a ;
             var processed = c; 
+            processed = processed.split("").reverse().join("");
             processed.should.be.deepEqual("itclub");
         });        
     });

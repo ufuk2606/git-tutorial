@@ -1,93 +1,61 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 105 - Data Model - Muhasebeci Leyla Hanim</title>
-
-    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Muhasebeci_Leyla_Hanim</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-
-    <h1>Module 105 - Data Model - Muhasebeci Leyla Hanim</h1>
-
+    <h1>Muhasebeci Leyla Hanim</h1>
     <main>
-        <section id="formSection">
-            <form action="">
-                <div class="form-control">
-                    <label>İsim</label>
-                    <input id="firstName" type="text" placeholder="Lütfen isminizi giriniz" required>
+        <section id="form-bolumu">
+            <form>
+                <div class="form-kontrol">
+                    <label>Isim</label>
+                    <input id="isim" type="text" placeholder="Lutfen isim giriniz." required>
                 </div>
-                <div class="form-control">
+                <div class="form-kontrol">
                     <label>Soyisim</label>
-                    <input id="lastName" type="text" placeholder="Lütfen soyisminizi giriniz" required>
+                    <input id="soyisim" type="text" placeholder="Lutfen soyisim giriniz." required>
                 </div>
-                <div class="form-control">
+                <div class="form-kontrol">
                     <label>Kanton</label>
-                    <select id="canton"></select>
+                    <section id="kanton"></section>
                 </div>
-                <div class="form-control">
-                    <button id="submit" type="submit">Kaydet</button>
+                <div class="form-kontrol">
+                    <button id="buton" type="submit">Kaydet</button>
                 </div>
             </form>
         </section>
-        <section id="tableSection">
-            <div id="table-top">
-                <div id="tt-left">
-                    <label>Kişiler</label>
+        <section id="tablo-bolumu">
+            <div id="tablonun-ustu">
+                <div id="tablonun-ustunun-solu">
+                    <label>Kisiler</label>
                 </div>
-                <div id="tt-right">
-                    <input type="text" placeholder="Search">
-                    <i class="fas fa-search"></i>
+                <div id="tablonun-ustunun-sagi">
+                    <input id="arama" type="text" placeholder="Search">
+                    <i class="fab fa-searchengin"></i>
                 </div>
             </div>
-            <table id="table">
+            <table id="tablo">
                 <thead>
                     <tr>
-                        <th>İsim
-                            <i class="fas fa-sort"></i>
-                        </th>
-                        <th>Soyisim
-                            <i class="fas fa-sort"></i>
-                        </th>
-                        <th>Kanton
-                            <i class="fas fa-sort"></i>
-                        </th>
+                        <th>Isim <i class="fas fa-sort"></i></th>
+                        <th>Soyisim <i class="fas fa-sort"></i></th>
+                        <th>Kanton <i class="fas fa-sort"></i></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Ahmet</td>
-                        <td>Selim</td>
-                        <td>ZH</td>
-                    </tr>
-                    <tr>
-                        <td>Ahmet</td>
-                        <td>Selim</td>
-                        <td>ZH</td>
-                    </tr>
-                    <tr>
-                        <td>Ahmet</td>
-                        <td>Selim</td>
-                        <td>ZH</td>
-                    </tr>
-                    <tr>
-                        <td>Ahmet</td>
-                        <td>Selim</td>
-                        <td>ZH</td>
-                    </tr>
+                    <!--Buraya formdan isimler gelecek-->
                 </tbody>
             </table>
         </section>
     </main>
 
-    <script src="https://kit.fontawesome.com/4f41118937.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/71aa453cdd.js" crossorigin="anonymous"></script>
     <script src="./model.js"></script>
-    <script src="./function.js"></script>
     <script src="./app.js"></script>
 </body>
-
 </html>

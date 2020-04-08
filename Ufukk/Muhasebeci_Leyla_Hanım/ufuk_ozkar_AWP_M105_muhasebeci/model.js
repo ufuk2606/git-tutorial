@@ -26,12 +26,12 @@ class Kisi{
     formuTemizle(){
         dom.verilenIdyiYakala("isim").value = "" ;
         dom.verilenIdyiYakala("soyisim").value = "" ;
-        dom.verilenIdyiYakala("kanton").value = "Vaud" ;
+        dom.verilenIdyiYakala("kanton").value = "" ;
     }
 
-    tabloyaYazdir(pKisiler){
+    tabloyaYazdir(pKisi){
         let tbody = dom.verilenIdyiYakala("tbody");
-        let yazilacak = pKisiler.map(item =>{
+        let yazilacak = pKisi.map(item =>{
             return `<tr><td>${item.isim}</td><td>${item.soyisim}</td><td>${item.kanton}</td></tr>`}).join("") ;
         tbody.innerHTML = yazilacak ;
     }
@@ -68,7 +68,7 @@ class Kanton{
     }
 
     kantonlariYazdir(){
-        let kanton = dom.verilenIdyiYakala("kanton");
+        let kanton =dom.verilenIdyiYakala("kanton");
         let yazilacakKantonlar = this.kantonlar.map(item =>{
             return `<option value="${item.isim}">${item.isim}</option>`
         }).join();

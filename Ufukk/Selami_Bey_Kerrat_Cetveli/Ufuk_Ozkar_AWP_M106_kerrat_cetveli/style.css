@@ -1,0 +1,13 @@
+
+body{
+    background-color: lightskyblue;
+}
+
+#islem-yapilan-yer{
+    font-size: 75px;
+    text-align: center;
+}
+
+#islem-yapilan-yer h3{
+    text-align: center;
+}

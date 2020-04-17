@@ -1,6 +1,6 @@
 
 body{
-    background-color: lightskyblue;
+    background-color: #45FFD4;
 }
 
 #islem-yapilan-yer{
@@ -10,4 +10,21 @@ body{
 
 #islem-yapilan-yer h3{
     text-align: center;
+}
+
+#kontrol-et{
+    float: right;
+    margin-right: 15px;
+}
+
+#ilerle{
+    float: right;
+}
+
+#ilk-sayi{
+    display: inline;
+}
+
+#ikinci-sayi{
+    display: inline;
 }

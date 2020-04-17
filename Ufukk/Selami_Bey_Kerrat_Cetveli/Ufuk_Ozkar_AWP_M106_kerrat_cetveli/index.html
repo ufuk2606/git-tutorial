@@ -15,9 +15,9 @@
         <div class="col-md-6">
             <form class="form-inline">
                 <div class="form-group mx-sm-3 mb-2">
-                    <input type="text" class="form-control" placeholder="Lutfen isminizi giriniz">
+                    <input type="text" class="form-control" placeholder="Lutfen isminizi giriniz" id="isim">
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Kaydet</button>
+                <button type="submit" class="btn btn-primary mb-2" id="buton">Kaydet</button>
             </form>
         </div>
         <div class="col-md-6">
@@ -28,15 +28,15 @@
                             <th scope="col">Skor</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tablo-body">
                             <tr>
-                                <td scope="col">Ali</td>
-                                <td scope="col">20</td>
+                                <td scope="col" id="Ali">Ali</td>
+                                <td scope="col" id="Ali-skor">20</td>
                                 <td><button type="submit" class="btn btn-primary">Basla</button></td>
                             </tr>
                             <tr>
-                                <td scope="col">Veli</td>
-                                <td scope="col">30</td>
+                                <td scope="col" id="Veli">Veli</td>
+                                <td scope="col" id="Veli-skor">30</td>
                                 <td><button type="submit" class="btn btn-primary">Basla</button></td>
                             </tr>
                         </tbody>
@@ -48,11 +48,16 @@
                KERRAT CETVELI
             </div>
             <div class="col-md-12">
-                <span>5</span>
+                <div id="ilk-sayi">5</div>
                 <span>x</span>
-                <span>3</span>
+                <div id="ikinci-sayi">3</div>
                 <span>=</span>
-                <span>15</span>
+                <input id="girilen-cevap"></input>
+            </div>
+            <div class="col-md-12" >
+                <h2 id="dogru-cevap-mesaji"></h2>
+                <button type="submit" class="btn btn-primary" id="ilerle">Ilerle</button>
+                <button type="submit" class="btn btn-primary" id="kontrol-et">Kontrol Et</button>
             </div>
        </section>
    </main>

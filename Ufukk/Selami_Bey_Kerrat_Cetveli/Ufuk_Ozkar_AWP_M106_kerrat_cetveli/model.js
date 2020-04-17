@@ -6,15 +6,12 @@ class Kisi{
     };
 
     yeniKisiOlustur(){
-        let buton = dom.getElementById("buton");
-        buton.addEventListener("onclick", function(){
-            let isim = dom.getElementById("isim").value;
-            let puan = 0 ;
-            let yeniKisi = new Kisi( isim, puan );
-            this.kisiler.push(yeniKisi);
-            this.inputuTemizle();
-            this.tabloyuGuncelle(this.kisiler);
-        }.bind(this));
+        let isim = dom.getElementById("isim").value;
+        let puan = 0 ;
+        let yeniKisi = new Kisi( isim, puan );
+        kisi.kisiler.push(yeniKisi);
+        kisi.inputuTemizle();
+        kisi.tabloyuGuncelle(kisi.kisiler);
     }
 
     inputuTemizle(){
@@ -24,47 +21,55 @@ class Kisi{
     tabloyuGuncelle(pKisi){
         let tabloBody = dom.getElementById("tablo-body");
         let yazilacakIsimListesi = pKisi.map(item =>{
-            return `<tr>
-                        <td scope="col">${item.adi}</td>
-                        <td scope="col">${item.skor}</td>
-                        <td><button type="submit" class="btn btn-primary" id=${item.adi}>Basla</button></td>
-                    </tr>`
+            return `<tr><td>${item.adi}</td><td class="${item.adi}">${item.skor}</td><td><button type="button" class="btn btn-primary" id="${item.adi}">Soruyu Degistir</button></td></tr>`
         }).join("");
         tabloBody.innerHTML = yazilacakIsimListesi ;
     }
 
-    oyunaBasla(){
-        let baslamaButonu = dom.getElementById("Ali");
-        baslamaButonu.addEventListener("onclick", function(){
-            let ilkSayi = this.rastgeleSayiUret();
-            let ikinciSayi = this.rastgeleSayiUret();
+    oyunaBasla(e){
+        if(e.target.className == "btn btn-primary"){
+            let id = e.target.id ;
+            let seciliKisi = kisi.verilenIdyiItemOlarakAl(id);
+            let ilkSayi = kisi.rastgeleSayiUret();
+            let ikinciSayi = kisi.rastgeleSayiUret();
             dom.getElementById("ilk-sayi").innerHTML = ilkSayi ;
             dom.getElementById("ikinci-sayi").innerHTML = ikinciSayi ;
-            this.cevapKontrol( ilkSayi, ikinciSayi);
-        }.bind(this));
+            kisi.cevapKontrol(seciliKisi , ilkSayi, ikinciSayi);
+            kisi.ilerle(seciliKisi);
+        }
     }
 
-    cevapKontrol( sayi1, sayi2 ){
+    cevapKontrol(seciliKisi, sayi1, sayi2 ){
         let kontrol = dom.getElementById("kontrol-et");
         kontrol.addEventListener("click", function(){
             let girilenCevap = dom.getElementById("girilen-cevap").value;
-            let alininSkoru = dom.getElementById("alinin-skor");
             let dogruCevap = sayi1 * sayi2 ;
             if( dogruCevap == girilenCevap ){
-                alininSkoru += 10 ;
+                seciliKisi.skor += 10;
+                dom.getElementByClassName(`${seciliKisi.adi}`).innerHTML = seciliKisi.skor ;
                 dom.getElementById("dogru-cevap-mesaji").innerHTML = `Dogru bildiniz.`;
             }else{
                 dom.getElementById("dogru-cevap-mesaji").innerHTML = `Dogru cevap = ${dogruCevap}`;
             }
+            dom.getElementById("girilen-cevap").value = "";
         });
     }
 
-    ilerle(){
-        let ilerle = dom.getElementById("ilerle");
-        ilerle.addEventListener("click", function(){
-            this.oyunaBasla();
-        }.bind(this));
+    verilenIdyiItemOlarakAl(id) {
+        let seciliKisi;
+        kisi.kisiler.forEach(item => {
+            if(item.adi == id ){               
+                seciliKisi = item;
+            }
+        });
+        return seciliKisi;
     }
+
+    // ilerle(){
+    //     dom.getElementById("dogru-cevap-mesaji").innerHTML = "";
+    //     dom.getElementById("girilen-cevap").value = "";
+    //     kisi.oyunaBasla;
+    // }
 
     rastgeleSayiUret(){
         return Math.floor( Math.random() * 10);
@@ -74,8 +79,8 @@ class Kisi{
 
 class Manager{
     start(){
-        kisi.yeniKisiOlustur();
-        kisi.oyunaBasla();
-        kisi.ilerle();
+        dom.getElementById("buton").addEventListener("click", kisi.yeniKisiOlustur) ;
+        dom.getElementById("tablo-body").addEventListener("click", kisi.oyunaBasla) ;
+        //dom.getElementById("ilerle").addEventListener("click", kisi.ilerle) ;
     }
 }

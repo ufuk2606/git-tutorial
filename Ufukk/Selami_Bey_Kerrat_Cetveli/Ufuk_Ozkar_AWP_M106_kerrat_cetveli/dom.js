@@ -8,4 +8,9 @@ class DOM {
     getElementById(pId) {
         return document.querySelector(`#${pId}`);
     }
+
+    getElementByClassName(pClass){
+        return document.querySelector(`.${pClass}`);
+    }
 }
+

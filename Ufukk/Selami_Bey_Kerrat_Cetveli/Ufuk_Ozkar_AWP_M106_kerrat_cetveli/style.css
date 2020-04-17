@@ -15,10 +15,12 @@ body{
 #kontrol-et{
     float: right;
     margin-right: 15px;
+    margin-top: 50px;
 }
 
 #ilerle{
     float: right;
+    margin-top: 50px;
 }
 
 #ilk-sayi{
@@ -26,5 +28,9 @@ body{
 }
 
 #ikinci-sayi{
+    display: inline;
+}
+
+#islem-yapilan-yer div h2 {
     display: inline;
 }

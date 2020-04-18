@@ -27,7 +27,7 @@ class Kisi{
     }
 
     oyunaBasla(e){
-        if(e.target.className == "btn btn-primary"){
+        if(e.target.className == "btn btn-primary"){    
             let id = e.target.id ;
             let seciliKisi = kisi.verilenIdyiItemOlarakAl(id);
             let ilkSayi = kisi.rastgeleSayiUret();

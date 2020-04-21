@@ -1,4 +1,4 @@
-let deneme = 0; 
+
 
 class SayiOkuma{
     sayi ;

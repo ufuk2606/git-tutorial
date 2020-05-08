@@ -1,15 +1,23 @@
-module.exports.dortIslem = class MatematikIslemleri{
-    toplama(x, y){
+class MatematikIslemleri{
+    static toplama(x, y){
         return x + y ;
     }
-    carpma(x, y){
+    static carpma(x, y){
         return x * y ;
     }
-    bolme(x, y){
+    static bolme(x, y){
         return x / y ;
     }
-    cikarma(x, y){
+    static cikarma(x, y){
         return x - y ;
     }
+
+}
+
+module.exports = {
+    toplama : MatematikIslemleri.toplama ,
+    carpma : MatematikIslemleri.carpma ,
+    bolme : MatematikIslemleri.bolme ,
+    cikarma : MatematikIslemleri.cikarma
 
 }

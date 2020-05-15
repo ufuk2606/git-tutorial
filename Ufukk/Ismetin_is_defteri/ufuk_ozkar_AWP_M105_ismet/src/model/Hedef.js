@@ -1,4 +1,7 @@
 
+/**
+ * 
+ */
 class Hedef{
     constructor(id, isim, adres, durumu){
         this.id = id ;

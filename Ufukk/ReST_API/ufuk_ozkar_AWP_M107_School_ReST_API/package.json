@@ -1,0 +1,21 @@
+{
+  "name": "school-rest-api",
+  "version": "0.0.1",
+  "description": "api that brings the teacher and the student together",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "student",
+    "teacher",
+    "rest",
+    "api",
+    "test"
+  ],
+  "author": "Ufuk Ozkar <ufukozkar11@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

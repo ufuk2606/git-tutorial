@@ -35,7 +35,7 @@ class TeacherService {
      * @param {integer} pId sahip olan cikarilip yeni girilen deger ile güncelleniyor.
      */
     updateTeacher(pTeacher, pId) {
-        this.database = this.database.filter(s => s.id!=pId)
+        this.database = this.database.filter(t => t.id!=pId)
         this.database.push(pTeacher);
     }
 

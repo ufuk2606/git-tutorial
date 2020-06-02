@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hicoders - React</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        class FormKayit extends React.Component{
+            render(){
+                return (
+                    <form>
+                        Adi <input type="text" /> <br /> <br />
+                        Soyadi <input type="text" /> <br /> <br />
+                        Doğum Tarihi <input type="date" /> <br /> <br />
+                        <button type="submit">Ekle</button>
+                    </form>
+                );
+            }
+        }
+
+
+      ReactDOM.render(
+        <FormKayit />,
+        document.getElementById('root')
+      );
+
+    </script>
+    
+</body>
+</html>
